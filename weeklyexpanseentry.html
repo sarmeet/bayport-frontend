@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="static/flexboxgrid.css">
+
+    <link rel="stylesheet" type="text/css" href="static/semantic.css">
+
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+
+    <script src="static/jQuery.js"></script>
+
+    <script src="static/semantic.js"></script>
+
+</head>
+<body>
+
+<br/>
+
+<div class="row center-xs center-lg center-md center-sm">
+    <h4 class="ui horizontal divider header">
+        <i class="add icon"></i>
+        Add Expense
+    </h4>
+
+    <div class="col-xs-8
+                col-sm-8
+                col-md-8
+                col-lg-8">
+        <div class="box left-text">
+            <h3>{Job Site}</h3>
+            <form class="ui form" action="/addexpense">
+                <div class="two fields ">
+                    <div class="field">
+                        <label>Vendor Name</label>
+                        <input type="text" name="vendor" placeholder="name">
+                    </div>
+
+                    <div class="field">
+                        <label>Date</label>
+                        <input type="date" name="date">
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>Product name</label>
+                        <input type="text" name="productname" placeholder="paint...">
+                    </div>
+                    <div class="field">
+                        <label>Price</label>
+                        <input type="number" step="any" name="price" placeholder="00.00">
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                    </div>
+                    <div class="field">
+                        <button class="circular ui icon button">
+                            <i class="icon add"></i>
+                        </button>
+
+                    </div>
+                </div>
+                <h4 class="ui horizontal divider header">
+                    <i class="info icon"></i>
+                    Invoice
+                </h4>
+                <div class="two fields">
+                    <div class="field">
+                        <label>Invoice Number</label>
+                        <input type="text" name="invoicenumber" placeholder="190-ik-0092">
+                    </div>
+                    <div class="field">
+                        <label>Upload File</label>
+                        <button class="ui black basic button"><i class="icon file"></i>Upload File</button>
+                    </div>
+                </div>
+                <div class="center-md center-sm center-lg center-xs">
+                    <button class="ui green basic button"><i class="icon check"></i>Submit</button>
+                    <button class="ui red basic button"><i class="icon close"></i>Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>
